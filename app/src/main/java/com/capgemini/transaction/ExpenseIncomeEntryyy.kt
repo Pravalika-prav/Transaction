@@ -55,7 +55,7 @@ class ExpenseIncomeEntryyy: Fragment() {
         }
 
             incomeB.setOnClickListener {
-                isAddedClicked = true
+//                isAddedClicked = true
                 Log.d("ExpenseIncomeentryyyy","second")
                 val amount = amountEditText.text.toString().toDouble()
                 val category = categoryEditText.text.toString()
@@ -94,7 +94,7 @@ class ExpenseIncomeEntryyy: Fragment() {
 
          }
         }
-        expenseIncomeVM = ViewModelProvider(this).get(expenseIncomeVM::class.java)
+//        expenseIncomeVM = ViewModelProvider(this).get(expenseIncomeVM::class.java)
     }
     fun datePick(){
             val c = Calendar.getInstance()
@@ -106,7 +106,7 @@ class ExpenseIncomeEntryyy: Fragment() {
                     // setting date to our edit text.
                     val sdate = (dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year)
                     date.setText(sdate)
-//                    val sDate= Calendar.getInstance()
+//foo                    val sDate= Calendar.getInstance()
 //                    sDate.set(year,monthOfYear,dayOfMonth)
 //                    val dateFormat= SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
 //                    val formattedDate=dateFormat.format(sDate.time)
